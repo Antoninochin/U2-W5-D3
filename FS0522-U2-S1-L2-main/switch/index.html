@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch construct</title>
+</head>
+
+<body>
+  <!-- In ogni istante il value del tag select è il value dell'option che l'utente seleziona.
+  Quindi, ad esempio:
+  - Se l'utente sceglie Mele
+  - document.getElementById('fruit-select').value sarà immediatamente uguale a "mele"
+  -->
+  <select id="fruit-select">
+    <option value="">--Please choose an option--</option>
+    <option value="banane">Banane</option>
+    <option value="mele">Mele</option>
+    <option value="mele_verdi">Mele Verdi</option>
+    <option value="mele_rosse">Mele Rosse</option>
+    <option value="mandarini">Mandarini</option>
+  </select>
+
+  <button onclick="printPrice()">Visualizza prezzo</button>
+  <hr />
+  <div id="display"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+#lista-prodotti {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.prodotto {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}

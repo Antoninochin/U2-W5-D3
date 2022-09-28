@@ -1,0 +1,60 @@
+* {box-sizing: border-box}
+body { 
+    
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+#slides {
+    display: none;
+    animation-name: opacity;
+    animation-duration: 1.5s;
+}
+@keyframes opacity {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+#slider{
+    width:100%;
+    position: relative;
+    margin: 0;
+}
+.number {
+    color: grey;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+.prev {
+    left: 0px;
+    border-radius:5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+  }
+  .next {
+    right: 0;
+    border-radius:5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
